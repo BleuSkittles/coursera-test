@@ -6,6 +6,7 @@
 
 section {
     background-color: #999999;
+    border: 1px solid black;
     margin: 1% 5%;
 }
 
@@ -43,7 +44,6 @@ h2 {
 p {
   padding: 4%;
   font-family: Helvetica;
-  border: 1px solid black;
 }
 
 /********** Desktop View **********/
