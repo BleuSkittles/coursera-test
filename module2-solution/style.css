@@ -43,13 +43,13 @@ h2 {
 p {
   padding: 4%;
   font-family: Helvetica;
+  border: 1px solid black;
 }
 
 /********** Desktop View **********/
 @media (min-width: 992px) {
     .col-lg-4 {
     float: left;
-    border: 1px solid black;
     width: 30.5%;
     }
   section.Chicken{
