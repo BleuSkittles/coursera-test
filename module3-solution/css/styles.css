@@ -1,0 +1,107 @@
+body {
+  font-size: 16px;
+  color:  #0072BB;
+  background-color:  #FF4C3B;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color:  #FFD034;
+  border-radius: 0;
+  border: 0;
+  padding-bottom: 15px;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* FOOD, LLC */
+  font-family: 'Oxygen', sans-serif;
+  color:  #0072BB;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#collapsable-nav { /* My own addition */
+  width: 100%;
+}
+
+#nav-list a {
+  color:  #000000;
+  border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #FF4C3B;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+/* END HEADER */
+
+#main-content {
+  font-family: 'Oxygen', sans-serif;
+  color: black;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+#main-content h1, #main-content h2 {
+  color: white;
+}
+
+#main-content div section{
+  background-color: #FFD034;
+  margin: 10px 20px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  #header-nav {
+    padding-bottom: 5px;
+  }
+
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* FOOD, LLC */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu glyph */
+    font-size: 1.2em;
+  }
+  /* End Header */
+
+}
