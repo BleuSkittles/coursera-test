@@ -40,6 +40,9 @@ body {
   color:  #000000;
   border: 1px solid black;
 }
+#nav-list a:hover, .nav-list a:focus {
+  background: #C6C8CA;
+}
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #FF4C3B;
