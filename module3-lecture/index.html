@@ -8,9 +8,62 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   </head>
 <body>
 
+  <header>
+    <nav id="header-nav" class="navbar navbar-default"> <!-- id -> header-nav. 2 classes -> base class of navbar and some modification of navbar called navbar-default -->
+      <div class="container"> <!-- container-fluid stretches to edges of browser, container keeps the content close to the middle (useful if you don't have too much things to put in the navbar). --> <!-- Content sits in container, but navbar (color) stretches to edges of browser - so define the div in the nav. --> 
+        <div class="navbar-header"> <!-- this class is required -->
+          <a href="index.html" class="pull-left visible-md visible-lg"> <!-- bootstrap class = pull-left == float left --> <!-- visible only when screen is medium or large, otherwise logo disappears -->
+            <div id="logo-img" alt="Logo image"></div> <!-- alt is for screen readers. -->
+          </a>
+
+          <div class="navbar-brand"> <!-- navbar-brand class is floated left -->
+            <a href="index.html"> <h1> David Chu's China Bistro </h1> </a>
+          <p>
+            <img src="images/star-k-logo.png" alt="Kosher certification">
+            <span> Kosher Certified </span>
+          </p>
+          </div>
+
+          <!-- Dropdown menu -->
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false"> <!-- navbar-toggle = class to position the navbar. also displays in mobile view or smaller. (~768 pixels) collapsed, data-toggle = collapse plugin. data-target="#collapsable-nav" is the id to reference the div class below to cause the button click to show the menu. aria-expanded is for screen readers -->
+            <span class="sr-only">Toggle navigation </span> <!-- for screen readers only, will not show up on browser screen -->
+            <span class="icon-bar"></span> <!-- putting the horizontal categories into the button --> 
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- These items in the ul with class nav navbar-nav and navbar-right below collapse into the dropdown menu at small screen size. The items above in the div with class navbar-header do not. -->
+
+        <div id="collapsable-nav" class="collapse navbar-collapse"> <!-- collapsable-nav was the id referenced to earlier -->
+          <ul id="nav-list" class="nav navbar-nav navbar-right"> <!-- nav-list is to be targeted later for styling. nav, navbar-nav say I'm going to be a part of the navigaion bar. navbar-right is similar to pull-right, specifically float navbar all the way to the right -->
+            <li>
+              <a href="menu-categories.html"> <!-- where the element points to -->
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu </a> <!-- glyphicon and glyphicon-cutlery brings in icon font - can be sized, color it etc. like a font, is a bootstrap component. br = break between icon and menu word, with a class of hidden-xs - break is hidden when screen size is xs, want the icon and menu to show up side by side in xs screen -->
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards </a>
+            </li>
+            <li id="phone" class="hidden-xs"> <!-- phone number hidden in the menu when screen is xs (because we want phone number to show up in the middle of the screen) -->
+              <a href="tel: 410-602-5008"> <!-- will trigger device feature to call if you click on it -->
+                <span> 410-602-5008</span></a><div> * We deliver </div>
+            </li>
+          </ul> <!-- #nav-list -->
+        </div> <!-- .collapse .navbar-collapse -->
+
+      </div> <!-- .container -->
+    </nav> <!-- #header-nav -->
+  </header>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
