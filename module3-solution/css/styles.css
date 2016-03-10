@@ -33,7 +33,7 @@ body {
 }
 
 #collapsable-nav { /* My own addition */
-  width: 100%;
+  width: 100%;  /* Note: viewport includes the scrollbars. */;
 }
 
 #nav-list a {
